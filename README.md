@@ -34,7 +34,8 @@ or use object initialize params
     comment.total
     #=> [{"id" => ..., "count" => ..., "url" => ...},
     #    {...}]
-
+## Issues
+* #### Denglu will not automatically refresh the token when connecting with weibo. One can't share statuses to weibo if the token is expired. I have to force the user redirect to authorize url again to get things worked.
 # See also
 
 * [Denglu Document](http://developer.denglu.cc/)

@@ -34,7 +34,6 @@ module Denglu
         :sign_type => Config.sign_type
       })
       params[:sign] = generate_sign(params)
-
       case method.upcase.to_sym
       when :POST
         RestClient.post uri, params
